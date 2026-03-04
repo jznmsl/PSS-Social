@@ -1,0 +1,45 @@
+{
+  "exp_name": "PSS_Social",
+  "seed": 10,
+  "num_npcs": 16,
+  "scenario": "corridor",
+  "max_cycles": 100,
+  "timesteps": 12000000,
+  "n_envs": 64,
+  "vecenv_kind": "subproc",
+  "device": "cpu",
+  "ppo": {
+    "n_steps": 2048,
+    "batch_size": 256,
+    "n_epochs": 5
+  },
+  "fir_config": {
+    "action_dim": 5,
+    "max_npcs": 24,
+    "k_rep": 5.0,
+    "beta3_init": 2.0,
+    "beta3_final": 1.0,
+    "beta3_anneal": true,
+    "anneal_start_ratio": 0.6,
+    "max_training_steps": 12000000,
+    "gamma": 0.99,
+    "intimate_space": 0.3,
+    "personal_space": 0.5,
+    "pss_progress_w": 1.5,
+    "pss_intimate_w": 8.0,
+    "pss_personal_w": 1.2,
+    "pss_reward_clip": 5.0,
+    "pss_density_adaptive": true,
+    "collision_penalty": 5.0,
+    "beta1_init": 0.0,
+    "beta2_target": 0.0
+  },
+  "timestamp": "2026-02-27T05:01:00",
+  "density_randomization": {
+    "enabled": true,
+    "min_active_npcs": 11,
+    "max_active_npcs": 16
+  },
+  "scenario_mix": "random:0.5,circle:0.5",
+  "early_stop": false
+}

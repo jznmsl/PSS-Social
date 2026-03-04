@@ -1,0 +1,38 @@
+{
+  "exp_name": "DS_RNN",
+  "method": "DS-RNN",
+  "seed": 42,
+  "num_npcs": 16,
+  "scenario": "random",
+  "scenario_mix": "random:0.5,circle:0.5",
+  "max_cycles": 100,
+  "timesteps": 12000000,
+  "n_envs": 32,
+  "vecenv_kind": "subproc",
+  "device": "cpu",
+  "ppo": {
+    "n_steps": 2048,
+    "batch_size": 256,
+    "n_epochs": 5,
+    "learning_rate": 0.0003
+  },
+  "dsrnn": {
+    "neighbor_embed_dim": 64,
+    "ego_embed_dim": 64,
+    "social_embed_dim": 64,
+    "n_attention_heads": 4,
+    "features_dim": 128
+  },
+  "density_randomization": {
+    "enabled": true,
+    "min_active_npcs": 11,
+    "max_active_npcs": 16
+  },
+  "parameters": {
+    "total": 84939,
+    "trainable": 84939,
+    "features_extractor": 59712,
+    "policy_heads": 25227
+  },
+  "timestamp": "2026-02-19T14:49:01"
+}

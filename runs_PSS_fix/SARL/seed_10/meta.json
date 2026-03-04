@@ -1,0 +1,24 @@
+{
+  "agent_name": "SARL",
+  "exp_name": "SARL",
+  "seed": 10,
+  "num_npcs": 16,
+  "scenario": "random",
+  "max_cycles": 100,
+  "timesteps": 12000000,
+  "n_envs": 64,
+  "vecenv_kind": "subproc",
+  "device": "cpu",
+  "ppo": {
+    "n_steps": 2048,
+    "batch_size": 256,
+    "n_epochs": 5
+  },
+  "density_randomization": {
+    "enabled": true,
+    "min_active_npcs": 11,
+    "max_active_npcs": 16
+  },
+  "scenario_mix": "random:0.5,circle:0.5",
+  "timestamp": "2026-02-24T04:38:26"
+}
