@@ -1,7 +1,5 @@
 # PSS-Social: Potential-Based Social Shaping for Safe Navigation in Dense Crowds
 
-Code for our  2026 submission on density-generalizable social robot navigation using deep reinforcement learning.
-
 ## Overview
 
 Existing DRL methods for social navigation fail when tested at crowd densities beyond their training distribution. We identify two key factors behind this failure: observation distribution shift from learned normalization statistics, and reward designs that either under-penalize collisions or induce conservative freezing.
