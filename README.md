@@ -50,3 +50,14 @@ python train_baselines.py --agent SARL,LSTM_RL --seeds 9,10,42,123,456 --timeste
 # Evaluate across density sweep
 python eval_unified.py ./runs_social --scenario random --densities 11,13,15,17,19,21 -n 100
 ```
+
+## Cite Us
+If you use PSS-Social in your work, please cite our paper:
+``` bib
+@article{zhang2026don,
+  title={Don't Freeze, Don't Crash: Extending the Safe Operating Range of Neural Navigation in Dense Crowds},
+  author={Zhang, Jiefu and Xu, Yang and Aggarwal, Vaneet},
+  journal={arXiv preprint arXiv:2603.06729},
+  year={2026}
+}
+```
